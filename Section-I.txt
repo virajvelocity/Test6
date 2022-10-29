@@ -1,0 +1,341 @@
+Section 1- Basic Java
+
+1. Variable 
+2. Data types
+3. Methods
+4. Control Statements
+5. Loops
+6. Types of Variables
+7. Constructor
+8. Keywords & Identifiers
+
+============================================================================================================================================================
+1. Variables:
+
+Variables:-
+
+ Variables are nothing but piece of memory used to store information. One variable can store 1 information at a time.
+
+ Variables also used in information reusability.
+
+ To utilize variables in java programing language we need to follow below steps:
+	1. Variable declaration (Allocating/Reserving memory)
+ 	2. Variable Initialization (Assigning or inserting value)
+	3. Usage
+
+**Note: -
+ According to all programming language dealing with information directly is not a good practice to overcome this variables are introduced.
+
+=============================================================================================================================================================
+2. Data types
+
+Data Types:-
+ Data type are used to represent type of data or information which we are going to use in our java program.
+
+ In java programming it is mandatory to declare data type before declaration of variable****.
+
+ In java, data types are classified into two types : 
+ 	1. Primitive data type.
+ 	2. Non-primitive data type
+
+
+1. Primitive data type:-
+
+ There are 8 type of primitive data types. 
+ All the primitive data types are "Keywords". 
+ Memory size of primitive data type are fix. 
+ 
+Note: keyword starts with lower case 
+
+
+1. (Numeric + Non-decimal):-
+
+Ex: 80,85,10,23,56,74..etc
+--------------------------------------------------------------------------------------------------------------------------------------------------
+  Data Type     |              Size           |          Description
+--------------------------------------------------------------------------------------------------------------------------------------------------
+1. byte         |             1 byte          |          Stores whole numbers from -128 to 127
+--------------------------------------------------------------------------------------------------------------------------------------------------
+2. short        |              2 bytes        |         Stores whole numbers from -32,768 to 32,767
+--------------------------------------------------------------------------------------------------------------------------------------------------
+3. int          |              4 bytes        |         Stores whole numbers from -2,147,483,648 to 2,147,483,647
+--------------------------------------------------------------------------------------------------------------------------------------------------
+4. long         |              8 bytes        |        Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. (Numeric + decimal):-
+
+ Ex: 22.5,22.8,6.4.... 
+
+-----------------------------------------------
+  Data Type     |              Size           |         
+-----------------------------------------------
+5.  float       |             4 byte          |       
+-----------------------------------------------
+6.   double     |             8 bytes         |       
+-----------------------------------------------
+
+
+3.Character:-
+
+ Ex: Ex: A,B,X,Z,p,e,.
+
+-----------------------------------------------
+  Data Type     |              Size           |         
+-----------------------------------------------
+7.    char      |             2 byte          |       
+-----------------------------------------------
+
+4.Conditional:-
+
+-----------------------------------------------
+  Data Type     |              Size           |         
+-----------------------------------------------
+8. boolean      |              1 bit          |       
+-----------------------------------------------
+
+
+2. Non-primitive datatype:-
+
+ There are 2 types of non primitive datatypes .
+ Non primitive datatypes are identifiers.
+ Memory size of non primitive datatype is not defined.
+
+Note: -Identifier starts with capital letter.
+
+ e.g. String, class
+
+===========================================================================================================================================================
+
+
+2. Methods:-
+ A method is a block of code which only runs when it is called.
+
+ You can pass data, known as parameters, into a method.
+
+ Methods are used to perform certain actions, and they are also known as functions.
+
+ Question: Why do we use methods? 
+   Answer: To reuse code: define the code once, and use it many times.
+
+
+1. Main method:
+
+ In any Java program, the main() method is the starting point from where compiler starts program execution.
+ Without main method we can't run any java program.
+
+
+2. Regular method
+
+	a. static regular method
+		
+		 i. Static method call from same class----------------------> methodname();
+
+      	ii. Static method call from diffrent/another class---------->classname.methodname();
+
+
+
+3. non- static regular method
+ 
+       i. Non-static method call from same class
+			Step-I:Create object of same class------->classname objectname/variablename=new classname();
+ 			Step-II:Call the Method------------------>objectname.methodname();
+ 
+	
+
+	ii.Non-static method call from diffrent/another class
+                   Step-I:Create object of different class------->classname objectname/variablename=new classname();
+			 Step-II:Call the Method------------------>objectname.methodname();
+
+
+5. Method without/zero parameter:
+6. method with parameter:
+7. method with return type:
+
+
+**Note:-
+ At the time of program execution, priority is scheduled for main method only.
+ At the time of program execution, main method is executed automatically, whereas regular methods are not executed automatically.
+ To execute regular methods,We need to call regular methods from the main method
+ Regular methods can be called multiple times.
+ 
+=============================================================================================================================================================
+4. Control Statements:
+1. if
+2. if else
+3. else if
+4. nested if
+5. switch
+
+
+1. if:
+	if(conditon)
+	{
+
+	}
+-------------------------------------------------------
+2. if else:
+	if (condition) 
+	{
+
+	} 
+	else
+	{ 
+
+	}
+-------------------------------------------------------
+3. else if:
+	if (condition) 
+	{ 
+
+	}
+	else if (condition) 
+	{
+
+	}
+	else if (condition) 
+	{
+
+	}
+      else 
+	{ 
+
+	}
+-------------------------------------------------------
+
+4. nested if:
+	if (condition) 
+	{ 
+		if (condition) 
+		{
+
+		}
+		else 
+		{ 
+
+		}
+	}	
+	else 
+	{
+ 
+	}
+-------------------------------------------------------
+5. Switch:
+	switch (key)
+	{
+		case value: break;
+		default:break;
+ 	}
+
+=============================================================================================================================================================
+
+5. Loops
+	1. for loop
+	2. while
+	3. do while
+	4. for each loop
+
+
+ 1.for loop:
+
+	for (int i = 0; i <=condition; i++)
+	{
+		SOP (“ ”);
+	} 
+-------------------------------------------------------
+2. while loop:
+
+	while (condition) 
+	{
+		SOP (“ ”);
+		i++;
+	}
+-------------------------------------------------------
+3. do while loop:
+
+	do
+	{
+		SOP(“ ”);
+		i++;
+	} 
+	while (condition);
+
+=============================================================================================================================================================
+
+
+6. Types of variable:
+
+	1. local variable:
+
+		 Creating variable inside method/block is known as local variable.
+		 Scope of local variable remains only within the method & they are temporary.
+
+	2. global variable:
+
+		 Creating variable outside method/block is known as global variable.
+		
+		a. class/static variable:
+
+			 Declaring the variable using static keyword is known as class/static variable .
+
+			     i. Static variable call from same class----------------------> variablename;
+
+      	           ii. Static variable call from diffrent/another class---------->classname.variablename;
+
+		b. Instance/non-static variable:
+
+			 All the non-static variables are known as instance variable because to access non-static variable instance (object) need to be created.
+			
+				i. Non-static Variable call from same class:
+						Step-I:Create object of same class------->classname objectname=new classname();
+ 						Step-II:Call the Variable------------------>objectname.variablename;
+ 
+	
+
+				ii.Non-static Variable call from diffrent/another class:
+                  			Step-I:Create object of different class------->classname objectname=new classname();
+						Step-II:Call the Variable------------------>objectname.variablename;
+
+
+=============================================================================================================================================================
+
+7. Constructor:
+
+	 A constructor in Java is a special method, it is used to initialize objects/variables.
+
+	 When an object of a class is created, Then constructor is called/executed automatically.
+
+	 Rules for the declaration of constructor:
+		1. Constructor name should be same as class name
+		2. You should not declare any return type for the constructor (if you declare any return type for constructor then it would be considered as a method).
+		3. Any no of constructor can be declared in a java class but constructor name should be same as class name,but arguments/parameter should be different.
+
+ Use of Constructor:
+
+	1. To copy/load members of class into object --> when we create object of class
+	2. To initialize data member/variable
+
+
+ Types of Constructor:
+	1. Default Constructor
+	2. User defined Constructor
+
+1. Default Constructor:
+	 If Constructor is not declared in java class, then at the time of compilation, compiler will provide Constructor for the class and such constructor is known as default Constructor
+	 If programmer has declared the constructor in the class then compiler will not provide default Constructor.
+	 The Constructor provided by compiler at the time of compilation is known as Default Constructor
+
+2. User defined Constructor
+	 If programmer has declared constructor in java class, then it is considered to be as an User defined constructor.
+		i) User defined Constructor are classified into 2 types
+			1. Without/zero parameter constructor
+ 			2. With parameter constructor
+
+=============================================================================================================================================================
+
+8. Keywords & Identifiers
+
+
+
+
+
